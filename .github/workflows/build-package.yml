@@ -150,7 +150,7 @@ jobs:
         ln -s "$CACHE_DIR_FEEDS" "feeds"
 
         staging_dir_host="staging_dir/host"
-        staging_dir_target="staging_dir/target-x86_64_musl"
+        staging_dir_target="staging_dir/target-ramips-mt7621_musl"
         staging_dir_toolchain="$(eval echo "staging_dir/toolchain-*")"
 
         test -d "$staging_dir_host" || mkdir -p "$staging_dir_host"
