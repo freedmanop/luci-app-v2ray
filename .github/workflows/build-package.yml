@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SDK_URL_PATH: https://downloads.openwrt.org/snapshots/targets/ramips/mt7621
-      SDK_NAME: -sdk-ramips-mt7621
+      SDK_NAME: -sdk-ramips-mt7621_
       CONFIG_CCACHE: y
     steps:
     - name: Checkout
@@ -150,7 +150,7 @@ jobs:
         ln -s "$CACHE_DIR_FEEDS" "feeds"
 
         staging_dir_host="staging_dir/host"
-        staging_dir_target="staging_dir/target-ramips-mt7621_musl"
+        staging_dir_target="staging_dir/target-x86_64_musl"
         staging_dir_toolchain="$(eval echo "staging_dir/toolchain-*")"
 
         test -d "$staging_dir_host" || mkdir -p "$staging_dir_host"
