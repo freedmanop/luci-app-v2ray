@@ -8,8 +8,7 @@ on:
 
 env:
   PACKAGE_NAME: luci-app-v2ray
-  SDK_URL_PATH: ${{ matrix.sdk_url_path }}
-  SDK_NAME: ${{ matrix.sdk_name }}
+ 
   CACHE_DIR: ~/cache
 
 jobs:
