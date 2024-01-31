@@ -14,7 +14,7 @@ jobs:
   push-and-build:
     runs-on: ubuntu-latest
     env:
-      SDK_URL_PATH: https://mirror-03.infra.openwrt.org/releases/23.05.2/targets/ramips/mt7621/
+      SDK_URL_PATH: https://mirror-03.infra.openwrt.org/snapshots/targets/ramips/mt7621
       SDK_NAME: -sdk-ramips-mt7621_
       CONFIG_CCACHE: y
     steps:
