@@ -8,7 +8,9 @@ on:
 
 env:
   PACKAGE_NAME: luci-app-v2ray
-  CACHE_DIR: ~/cache
+  SDK_URL_PATH: ${{ matrix.sdk_url_path }}
+  SDK_NAME: ${{ matrix.sdk_name }}
+  CCACHE_DIR: ~/.ccache
 
 jobs:
   push-and-build:
@@ -21,7 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        persist-credentials: true
+        persist-credentials: false
         fetch-depth: 2
 
     - name: Setup Node.js
